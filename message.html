@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!---- FAVIOCN-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-------- CSS LINK-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!---- BOIXONCS LINKS-->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+    <!--- FONT AWESONNE CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <!--- LINK ICONS --->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-------- MATERIAL ICONS CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="header-icon">
+            <a href="#"><i class="fa-solid fa-rotate-left"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-gear"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="content_header">
+
+            <form action="">
+                <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input id="search" type="text" placeholder="Search..." required />
+                <button><i class='bx bx-right-arrow-alt'></i></i></button>
+            </form>
+
+            <div class="toggle">
+                <h4>glazzed</h4>
+                <span><i class='bx bx-toggle-left'></i></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="container_section">
+        <main class="menus_container">
+            <div class="profil">
+                <img src="img/avatar5.jpg" alt="Pictues">
+                <h4>Marian Lewis</h4>
+                <p>Admin Manager</p>
+                <div class="skills">
+                    <div class="col1">
+                        <span><i class='bx bx-user'></i></span>
+                        <h5>26k+</h5>
+                        <span>+14</span>
+                    </div>
+                    <div class="col1">
+                        <span><i class='bx bxl-telegram'></i></span>
+                        <h5>1095</h5>
+                        <span>+56</span>
+                    </div>
+                    <div class="col1">
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <h5>1095</h5>
+                        <span>+56</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="menu">
+                <li class=" menu-item">
+                    <i class='bx bx-home'></i>
+                    <a href="index.html">Dasboard</a>
+                </li>
+
+                <li class=" menu-item">
+                    <i class='bx bx-slider-alt'></i>
+                    <a href="#">UI Elements</a>
+                </li>
+
+                <li>
+                <li class=" menu-item sub_btn ">
+                    <i class='bx bx-desktop'></i>
+                    <a href="#">Samples Pages
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                </li>
+
+                <ul class="sub-menu sub_Menu ">
+                    <li class="sub-item"> <a href="#">Calendar</a> </li>
+                    <li class="sub-item"> <a href="#">Images Gallery</a> </li>
+                    <li class="sub-item"> <a href="#">Support Chat</a> </li>
+                </ul>
+                </li>
+
+                <li class="active menu-item">
+                    <i class='bx bx-chat'></i>
+                    <a href="#">Messages</a>
+                </li>
+                <li class="menu-item">
+                    <i class='bx bx-customize'></i>
+                    <a href="#">Forms</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bx-table'></i>
+                    <a href="#">Tables</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bxs-layout'></i>
+                    <a href="#">Grid Layout</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bxs-layout'></i>
+                    <a href="#">Statics</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bxl-deezer'></i>
+                    <a href="#">Statics</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bx-info-circle'></i>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+        </main>
+
+        <div class="section_messages section_info">
+
+            <div class="messages">
+                <div class="header">
+                    <div class="info">
+                        <i class='bx bx-chat'></i>
+                        <h2>Messages</h2>
+                    </div>
+                    <div class="button_load ">
+                        <button class="btn ">
+                            <span class="material-icons-sharp">rotate_left</span>
+                        </button>
+                        <button><span class="material-icons-sharp">south </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button_messages filter-menu">
+                    <button data-target="latest" class=" btn active"><a href="#">Latests</a></button>
+                    <button data-target="oldest" class="btn"><a href="#">Oldest</a></button>
+                    <button data-target="favorites" class="btn"><a href="#">Favorites</a></button>
+                </div>
+
+                <div class="messages_block filter-item">
+                    <div class="message fliterDiv" data-item="latest">
+                        <img src="img/avatar3.jpg">
+                        <div class="message_inter">
+                            <h2>John Spencer <small>from twitter / 6 hours ago</small></h2>
+                            <p>Il avait d’abord commencé par récupérer des informations depuis l’ordinateur de David,
+                                puis il était allé les chercher sur Internet. Il avait lui-même programmé l’ordinateur
+                                de David afin d’avoir un premier lien vers le monde extérieur.</p>
+                            <div class="action_message">
+                                <button class="actMessa">
+                                    <a href="#"><span class="material-icons-sharp">reply</span>
+                                        <p>Reply</p>
+                                    </a>
+                                </button>
+                                <button class="actMessa">
+                                    <a href="#">
+                                        <span class="material-icons-sharp">star</span>
+                                        <p>Favorite</p>
+                                    </a>
+                                </button>
+                                <button class="actMessa">
+                                    <a href="#">
+                                        <span class="material-icons-sharp">delete</span>
+                                        <p>Delete</p>
+                                    </a>
+                                </button>
+                                <button>
+                                    <span class="material-icons-sharp"> north </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="favorites">
+                        <img src="img/avatar4.jpg">
+
+                        <div class="message_inter">
+                            <h2>Victoria Campel <small>from facebook / 1 days ago</small></h2>
+                            <p>Phasellus laoreet, elit ut interdum molestie, massa sem fermentum massa, eget imperdiet
+                                magna lacus nec quam. Donec dapibus, lectus vel lobortis aliquet, diam sapien
+                                condimentum lacus, quis congue ipsum lacus non dui.</p>
+
+                        </div>
+                        <div class="action">
+                            <span class="material-icons-sharp favorite">star_rate </span>
+                            <span class="material-icons-sharp"> mobile_friendly</span>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="favorites">
+                        <img src="img/avatar1.jpg">
+
+                        <div class="message_inter">
+                            <h2>Victoria Campel <small>from facebook / 1 days ago</small></h2>
+                            <p>Phasellus laoreet, elit ut interdum molestie, massa sem fermentum massa, eget imperdiet
+                                magna lacus nec quam. Donec dapibus, lectus vel lobortis aliquet, diam sapien
+                                condimentum lacus, quis congue ipsum lacus non dui.</p>
+
+                        </div>
+                        <div class="action">
+                            <span class="material-icons-sharp favorite">star_rate </span>
+                            <span class="material-icons-sharp"> mobile_friendly</span>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="latest">
+                        <img src="img/avatar2.jpg">
+                        <div class="message_inter">
+                            <h2>John Spencer <small>from twitter / 6 hours ago</small></h2>
+                            <p>Il avait d’abord commencé par récupérer des informations depuis l’ordinateur de David,
+                                puis il était allé les chercher sur Internet. Il avait lui-même programmé l’ordinateur
+                                de David afin d’avoir un premier lien vers le monde extérieur.</p>
+                            <div class="action_message">
+                                <button class="actMessa">
+                                    <a href="#"><span class="material-icons-sharp">reply</span>
+                                        <p>Reply</p>
+                                    </a>
+                                </button>
+                                <button class="actMessa">
+                                    <a href="#">
+                                        <span class="material-icons-sharp">star</span>
+                                        <p>Favorite</p>
+                                    </a>
+                                </button>
+                                <button class="actMessa">
+                                    <a href="#">
+                                        <span class="material-icons-sharp">delete</span>
+                                        <p>Delete</p>
+                                    </a>
+                                </button>
+                                <button>
+                                    <span class="material-icons-sharp"> north </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="latest">
+                        <img src="img/avatar5.jpg">
+                        <div class="message_inter">
+                            <h2>John Spencer <small>from twitter / 6 hours ago</small></h2>
+                            <p>Il avait d’abord commencé par récupérer des informations depuis l’ordinateur de David,
+                                puis il était allé les chercher sur Internet. Il avait lui-même programmé l’ordinateur
+                                de David afin d’avoir un premier lien vers le monde extérieur.</p>
+                            <div class="action_message">
+                                <button class="actMessa">
+                                    <a href="#"><span class="material-icons-sharp">reply</span>
+                                        <p>Reply</p>
+                                    </a>
+                                </button>
+                                <button class="actMessa">
+                                    <a href="#">
+                                        <span class="material-icons-sharp">star</span>
+                                        <p>Favorite</p>
+                                    </a>
+                                </button>
+                                <button class="actMessa">
+                                    <a href="#">
+                                        <span class="material-icons-sharp">delete</span>
+                                        <p>Delete</p>
+                                    </a>
+                                </button>
+                                <button>
+                                    <span class="material-icons-sharp"> north </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="oldest">
+                        <img src="img/avatar4.jpg">
+
+                        <div class="message_inter">
+                            <h2>Nafissa Roufaï <small>from twitter / 10 days ago</small></h2>
+                            <p>Phasellus laoreet, elit ut interdum molestie, massa sem fermentum massa, eget imperdiet
+                                magna lacus nec quam. Donec dapibus, lectus vel lobortis aliquet, diam sapien
+                                condimentum lacus, quis congue ipsum lacus non dui.</p>
+
+                        </div>
+                        <div class="action">
+                            <span class="material-icons-sharp favorite">star_rate </span>
+                            <span class="material-icons-sharp"> mobile_friendly</span>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="favorites">
+                        <img src="img/avatar5.jpg">
+
+                        <div class="message_inter">
+                            <h2>Victoria Campel <small>from facebook / 1 days ago</small></h2>
+                            <p>Phasellus laoreet, elit ut interdum molestie, massa sem fermentum massa, eget imperdiet
+                                magna lacus nec quam. Donec dapibus, lectus vel lobortis aliquet, diam sapien
+                                condimentum lacus, quis congue ipsum lacus non dui.</p>
+
+                        </div>
+                        <div class="action">
+                            <span class="material-icons-sharp favorite">star_rate </span>
+                            <span class="material-icons-sharp"> mobile_friendly</span>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="oldest">
+                        <img src="img/avatar6.jpg">
+
+                        <div class="message_inter">
+                            <h2>Nafissa Roufaï <small>from twitter / 10 days ago</small></h2>
+                            <p>Phasellus laoreet, elit ut interdum molestie, massa sem fermentum massa, eget imperdiet
+                                magna lacus nec quam. Donec dapibus, lectus vel lobortis aliquet, diam sapien
+                                condimentum lacus, quis congue ipsum lacus non dui.</p>
+
+                        </div>
+                        <div class="action">
+                            <span class="material-icons-sharp favorite">star_rate </span>
+                            <span class="material-icons-sharp"> mobile_friendly</span>
+                        </div>
+                    </div>
+                    <div class="message fliterDiv" data-item="oldest">
+                        <img src="img/avatar7.jpg">
+
+                        <div class="message_inter">
+                            <h2>Nafissa Roufaï <small>from twitter / 10 days ago</small></h2>
+                            <p>Phasellus laoreet, elit ut interdum molestie, massa sem fermentum massa, eget imperdiet
+                                magna lacus nec quam. Donec dapibus, lectus vel lobortis aliquet, diam sapien
+                                condimentum lacus, quis congue ipsum lacus non dui.</p>
+
+                        </div>
+                        <div class="action">
+                            <span class="material-icons-sharp favorite">star_rate </span>
+                            <span class="material-icons-sharp"> mobile_friendly</span>
+                        </div>
+                    </div>
+                    <!--- MESAGE 2-->
+                </div>
+                <!--- BLOCK MESSAGE END -->
+                <div class=" sidebar">
+
+                    <button>
+                        <span class="material-icons-sharp push_btn"> push_pin</span>
+                    </button>
+                    
+                        <input type="text" placeholder="leave a message..." required>
+                        <button>
+                            <span class="material-icons-sharp">
+                                send
+                            </span>
+                        </button>
+                    
+
+                </div>
+
+            </div>
+            <div class="memebers messages">
+                <div class="header">
+                    <div class="info">
+                        <span class="material-icons-sharp">person_2</span>
+                        <h2>Members</h2>
+                    </div>
+                    <div class="button_load">
+                        <button>
+                            <a href=""><span class="material-icons-sharp open-dashBtn">rotate_left</span></a>
+                        </button>
+                        <button><span class="material-icons-sharp"> close </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <!--- FILTER ----->
+
+    <script>
+        let sortBtn = document.querySelector('.filter-menu').children;
+        let sortItem = document.querySelector('.filter-item').children;
+
+        for (let i = 0; i < sortBtn.length; i++) {
+            sortBtn[i].addEventListener('click', function () {
+                for (let j = 0; j < sortBtn.length; j++) {
+                    sortBtn[j].classList.remove('current');
+                }
+
+                this.classList.add('current');
+
+
+                let targetData = this.getAttribute('data-target');
+
+                for (let k = 0; k < sortItem.length; k++) {
+                    sortItem[k].classList.remove('active');
+                    sortItem[k].classList.add('delete');
+
+                    if (sortItem[k].getAttribute('data-item') == targetData || targetData == "all") {
+                        sortItem[k].classList.remove('delete');
+                        sortItem[k].classList.add('active');
+                    }
+                }
+            });
+        }
+
+
+    </script>
+
+    <!-----JS LINK-->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
