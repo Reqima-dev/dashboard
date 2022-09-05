@@ -1016,12 +1016,197 @@ canvas#pieCharts {
   color: #fff;
   transition: all 300ms ease;
 }
-.members_sidebar button:hover{
+.members_sidebar button:hover {
   background: #647aa0;
 }
-.members_sidebar button span{
+.members_sidebar button span {
   padding-right: 15px;
 }
 .members_sidebar button:first-child {
   border-right: 1px solid #dadada;
+}
+
+/*--------- TABLES PAGES -----*/
+.alert_messages {
+  position: relative;
+  display: grid;
+  grid-template-columns: 35% auto;
+  width: 1030px;
+  gap: 1rem;
+}
+
+.alert_messages .alertMessages {
+  background: #8c95c0;
+  position: relative;
+}
+.alertMessages .alerthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem;
+  padding-right: 0;
+  border-bottom: 1px solid #dadada;
+}
+.alertMessages .alerthead > div {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.alertMessages .alerthead > div h2 {
+  font-weight: 350;
+}
+
+.alertMessages .alerthead button {
+  background: transparent;
+  border: none;
+  width: 70px;
+  height: 10vh;
+  border-left: 1px solid #dadada;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.alertMessages .alerthead button:hover {
+  background: #7c71ad;
+}
+
+.alertMessages .alerthead button span {
+  padding: 1rem;
+}
+
+.alert_messages .blockAlert {
+  display: block;
+  max-height: 57vh;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.alert_messages .blockAlert .alerts {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 13vh;
+  padding: 1rem;
+  gap: 1rem;
+  border-bottom: 1px solid #dadada;
+}
+.alert_messages .blockAlert .alerts span:first-child {
+  border-radius: 50%;
+  padding: 0.4rem;
+  font-size: 20px;
+}
+.alert_messages .blockAlert .alerts span.green {
+  color: rgb(1, 167, 1);
+  border: 1px solid rgb(1, 167, 1);
+}
+.alert_messages .blockAlert .alerts p {
+  font-size: 17px;
+}
+.alert_messages .blockAlert .alerts span:last-child {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.blockAlert .alerts span.yellow {
+  color: yellow;
+  border: 1px solid yellow;
+}
+
+.blockAlert .alerts span.prioity {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.blockAlert .alerts span.close {
+  color: red;
+  border: 1px solid red;
+}
+
+.alert_messages .mediaTable {
+  background: #8c95c0;
+  position: relative;
+}
+
+.mediaTable .alerthead > div i {
+  font-size: 25px;
+}
+
+.mediaTable table {
+  width: 100%;
+  border-spacing: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+table thead {
+  width: 100%;
+  height: 7vh;
+  border-bottom: 1px solid #dadada;
+}
+table thead tr td {
+  border-right: 1px solid #dadada;
+  padding-left: 1rem;
+}
+table td:nth-child(1) {
+  width: 270px;
+}
+table td:nth-child(2) {
+  width: 100px;
+}
+table td:nth-child(3) {
+  width: 180px;
+}
+
+tbody td:nth-child(2) {
+  font-size: 13.5px;
+}
+tbody td:nth-child(3) {
+  font-size: 12px;
+}
+table td:nth-child(4) {
+  width: 50px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dadada;
+  
+}
+tbody tr .description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+tbody tr td {
+  padding: .6rem 1rem;
+}
+tbody tr .description img {
+  width: 50px;
+}
+
+tbody tr .description > div h2 {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+tbody tr .description > div p {
+  font-size: 14px;
+  color: #585858;
+  padding-bottom: 5px;
+}
+tbody tr .description > div button {
+  background: transparent;
+  border: blue 1px solid;
+  width: 40%;
+  height: 2rem;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+tbody tr td:nth-child(4) span {
+  color: red;
 }

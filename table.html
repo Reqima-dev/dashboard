@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!---- FAVIOCN-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-------- CSS LINK-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!---- BOIXONCS LINKS-->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+    <!--- FONT AWESONNE CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <!--- LINK ICONS --->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-------- MATERIAL ICONS CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="header-icon">
+            <a href="#"><i class="fa-solid fa-rotate-left"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-gear"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="content_header">
+
+            <form action="">
+                <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input id="search" type="text" placeholder="Search..." required />
+                <button><i class='bx bx-right-arrow-alt'></i></i></button>
+            </form>
+
+            <div class="toggle">
+                <h4>glazzed</h4>
+                <span><i class='bx bx-toggle-left'></i></span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="container_section">
+        <main class="menus_container">
+            <div class="profil">
+                <img src="img/avatar5.jpg" alt="Pictues">
+                <h4>Marian Lewis</h4>
+                <p>Admin Manager</p>
+                <div class="skills">
+                    <div class="col1">
+                        <span><i class='bx bx-user'></i></span>
+                        <h5>26k+</h5>
+                        <span>+14</span>
+                    </div>
+                    <div class="col1">
+                        <span><i class='bx bxl-telegram'></i></span>
+                        <h5>1095</h5>
+                        <span>+56</span>
+                    </div>
+                    <div class="col1">
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <h5>1095</h5>
+                        <span>+56</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="menu">
+                <li class=" menu-item">
+                    <i class='bx bx-home'></i>
+                    <a href="#">Dasboard</a>
+                </li>
+
+                <li class=" menu-item">
+                    <i class='bx bx-slider-alt'></i>
+                    <a href="#">UI Elements</a>
+                </li>
+
+                <li>
+                <li class=" menu-item sub_btn ">
+                    <i class='bx bx-desktop'></i>
+                    <a href="#">Samples Pages
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                </li>
+
+                <ul class="sub-menu sub_Menu ">
+                    <li class="sub-item"> <a href="#">Calendar</a> </li>
+                    <li class="sub-item"> <a href="#">Images Gallery</a> </li>
+                    <li class="sub-item"> <a href="#">Support Chat</a> </li>
+                </ul>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bx-chat'></i>
+                    <a href="message.html">Messages</a>
+                </li>
+                <li class="menu-item">
+                    <i class='bx bx-customize'></i>
+                    <a href="#">Forms</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bxs-layout'></i>
+                    <a href="#">Grid Layout</a>
+                </li>
+
+                <li class="active menu-item">
+                    <i class='bx bxs-layout'></i>
+                    <a href="table.html">Tables</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bxl-deezer'></i>
+                    <a href="#">Statics</a>
+                </li>
+
+                <li class="menu-item">
+                    <i class='bx bx-info-circle'></i>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+        </main>
+
+        <div class="alert_messages section_info">
+            <div class="alertMessages">
+                <div class="alerthead">
+                    <div>
+                        <span class="material-icons-sharp"> textsms </span>
+                        <h2>Alert Messages</h2>
+                    </div>
+                    <button>
+                        <span class="material-icons-sharp"> refresh </span>
+                    </button>
+                </div>
+
+                <div class="blockAlert">
+                    <div class="alerts">
+                        <span class="material-icons-sharp green">
+                            done
+                        </span>
+                        <p>Succes ! The Page has been</p>
+                        <span class="material-icons-sharp">
+                            close
+                        </span>
+                    </div>
+                    <!--Alert 1-->
+                    <div class="alerts">
+                        <span class="material-icons-sharp yellow">
+                            warning_amber
+                        </span>
+                        <p>Warnig! YOur Monthly trafic</p>
+                        <span class="material-icons-sharp">
+                            close
+                        </span>
+                    </div>
+                    <!--Alert 2-->
+                    <div class="alerts">
+                        <span class="material-icons-sharp prioity">
+                            priority_high
+                        </span>
+                        <p>Info ! Your have 24h ouurs t...</p>
+                        <span class="material-icons-sharp">
+                            close
+                        </span>
+                    </div>
+                    <!--Alert 3-->
+                    <div class="alerts">
+                        <span class="material-icons-sharp close">
+                            close
+                        </span>
+                        <p>Error! The Chat page has....</p>
+                        <span class="material-icons-sharp">
+                            close
+                        </span>
+                    </div>
+                    <!--Alert 4-->
+
+                </div>
+
+            </div>
+            <!----END OF ALERT PARTS-->
+            <div class="mediaTable alertMessages">
+                <div class="alerthead">
+                    <div>
+                        <i class='bx bxs-layout'></i>
+                        <h2>Media Table</h2>
+                    </div>
+                    <button>
+                        <span class="material-icons-sharp"> addon </span>
+                    </button>
+                </div>
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Post Description</td>
+                            <td>Date</td>
+                            <td>Post Info</td>
+                            <td>Del</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="description">
+                                <img src="img/f1.jpg">
+                                <div>
+                                    <h2>Gravity Psd B-Grands</h2>
+                                    <p>A classic Photo</p>
+                                    <button>Edit</button>
+                                </div>
+                            </td>
+                            <td>
+                                25 Feb 2015 <br> 15:02
+                            </td>
+                            <td>
+                                A classic labore tempore quam saepe estis esse. Aperiam
+                                rem labore consequatur autem consectetur?
+                            </td>
+                            <td>
+                                <span class="material-icons-sharp">
+                                    cancel
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="description">
+                                <img src="img/f7.jpg">
+                                <div>
+                                    <h2>Gravity Psd B-Grands</h2>
+                                    <p>A classic Photo</p>
+                                    <button>Edit</button>
+                                </div>
+                            </td>
+                            <td>
+                                25 Feb 2015 <br> 15:02
+                            </td>
+                            <td>
+                                A classic labore tempore quam saepe estis esse. Aperiam
+                                rem labore consequatur autem consectetur?
+                            </td>
+                            <td>
+                                <span class="material-icons-sharp">
+                                    cancel
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="description">
+                                <img src="img/f8.jpg">
+                                <div>
+                                    <h2>Gravity Psd B-Grands</h2>
+                                    <p>A classic Photo</p>
+                                    <button>Edit</button>
+                                </div>
+                            </td>
+                            <td>
+                                25 Feb 2015 <br> 15:02
+                            </td>
+                            <td>
+                                A classic labore tempore quam saepe estis esse. Aperiam
+                                rem labore consequatur autem consectetur?
+                            </td>
+                            <td>
+                                <span class="material-icons-sharp">
+                                    cancel
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--- END OF MEDIA TABLE-->
+            <!---
+            <div class="resume_section">
+               
+                <div class="progress">
+                    <div class="card">
+                        <div class="box">
+                            <p class="number">
+                                <span class="num">43</span>
+                                <span class="sub">%</span>
+                            </p>
+                        </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                            <defs>
+                                <linearGradient id="gradientStyle">
+                                    <stop offset="0%" stop-color="#565656" />
+                                    <stop offset="100%" stop-color="#b7b5b5" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle" cx="60" cy="60" r="50" />
+                        </svg>
+            
+                    </div>
+                    <div class="info">
+                        <p>Total <br>balance</p>
+                        <span>+16K</span>
+                    </div>
+                </div>
+            
+                <div class="progress">
+                    <div class="card">
+                        <div class="box">
+                            <p class="number">
+                                <span class="num">70</span>
+                                <span class="sub">%</span>
+                            </p>
+                        </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                            <defs>
+                                <linearGradient id="gradientStyle">
+                                    <stop offset="0%" stop-color="#565656" />
+                                    <stop offset="100%" stop-color="#b7b5b5" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle" cx="60" cy="60" r="50" />
+                        </svg>
+            
+                    </div>
+                    <div class="info">
+                        <p>New <br>members</p>
+                        <span>+194</span>
+                    </div>
+                </div>
+            
+                <div class="progress">
+                    <div class="card">
+                        <div class="box">
+                            <p class="number">
+                                <span class="num">25</span>
+                                <span class="sub">%</span>
+                            </p>
+                        </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                            <defs>
+                                <linearGradient id="gradientStyle">
+                                    <stop offset="0%" stop-color="#565656" />
+                                    <stop offset="100%" stop-color="#b7b5b5" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle" cx="60" cy="60" r="50" />
+                        </svg>
+            
+                    </div>
+                    <div class="info">
+                        <p>New <br>orders</p>
+                        <span>+76k</span>
+                    </div>
+                </div>
+            
+            </div>
+            END OF RESUME SECTION-->
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <!-----JS LINK-->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
