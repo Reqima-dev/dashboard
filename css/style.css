@@ -10,7 +10,8 @@
 }
 
 i,
-a {
+a,
+span {
   color: white;
 }
 
@@ -812,13 +813,215 @@ canvas#pieCharts {
   border-top: 1px solid #dadada;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.sidebar button {
+.sidebar > button {
   border: none;
   background: transparent;
   cursor: pointer;
-  width: 50px;
-  height: 7vh;
+  width: 17%;
+  height: 9vh;
+  border-right: 1px solid #dadada;
+  transition: all 300ms ease;
+}
+.sidebar > button:hover {
+  background: #5f7ba0;
+}
+
+.sidebar form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sidebar form input {
+  width: 420px;
+  height: 9vh;
+  background: #647aa0;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.sidebar form button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 17%;
+  height: 9vh;
+  border-left: 1px solid #dadada;
+  float: right;
+  transition: all 300ms ease;
+}
+.sidebar form button:hover {
+  background: #5f7ba0;
+}
+
+/*------ MENMBERS -------*/
+.totalusers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #dadada;
+}
+.totalusers > div:first-child {
+  background: #5f7ba0;
+  height: 3.8rem;
+  width: 73%;
+  padding: 1rem;
+  border-right: 1px solid #dadada;
+}
+.totalusers > div:first-child p {
+  font-size: 14px;
+}
+.totalusers > div:first-child p span {
+  font-size: 20px;
+}
+.totalusers .buttonsort {
+  display: flex;
+  width: 27%;
+  height: 3.8rem;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.totalusers .buttonsort span {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.totalusers .buttonsort:hover {
+  background: #5f7ba0;
+}
+
+.membersBlock {
+  display: block;
+  max-height: 57vh;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.membersBlock .members {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.membersBlock .members {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #dadada;
+}
+
+.membersBlock .members img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.membersBlock .members .memberInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  width: 100%;
+}
+.members .memberInfo .membner_profil {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.members .memberInfo h2 {
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 0.65rem;
+}
+
+.members .memberInfo p,
+.members .memberInfo p span {
+  font-size: 12px;
+}
+
+.members .memberInfo .buttonMemb {
+  float: right;
+}
+.members .memberInfo .buttonMemb span {
+  cursor: pointer;
+}
+.members .memberInfo .buttonMemb span:first-child {
+  color: aqua;
+  font-size: 2rem;
+}
+
+.members .memberInfo .buttonMemb span:last-child {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.members .info_Memb {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding-left: 7rem;
+}
+
+.members .info_Memb span {
+  font-size: 13px;
+  border-top: 1px solid #dadada;
+  padding-top: 15px;
+}
+
+.members .info_Memb span a,
+.members .info_Memb span small {
+  padding-left: 25px;
+}
+
+.members .info_Memb span small {
+  color: rgba(0, 0, 0, 0.582);
+  border-radius: 50%;
+  padding: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.582);
+}
+
+.members_sidebar {
+  border-top: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.members_sidebar button {
+  width: 50%;
+  background: transparent;
+  border: none;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  cursor: pointer;
+  color: #fff;
+  transition: all 300ms ease;
+}
+.members_sidebar button:hover{
+  background: #647aa0;
+}
+.members_sidebar button span{
+  padding-right: 15px;
+}
+.members_sidebar button:first-child {
+  border-right: 1px solid #dadada;
 }
