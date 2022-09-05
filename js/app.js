@@ -25,9 +25,9 @@ window.addEventListener("load", function () {
         numElement.innerText = count;
       }
     }, time);
-    
+
     circle.style.strokeDashoffset = 403 - 403 * (num / 100);
-    
+
     let dot = item.querySelector(".dots");
     dot.style.transform = `rotate(${460 * (num / 100)}deg)`;
     if (num == 100) {
@@ -44,7 +44,7 @@ new Chart(chart, {
   type: "line",
   data: {
     labels: ["1", "2", "3", "4", "5", "6", "7", "8"],
-    
+
     datasets: [
       {
         label: "Balance",
@@ -53,7 +53,7 @@ new Chart(chart, {
         borderWidth: 2,
         fill: true,
         tension: 0.1,
-        
+
       },
       {
         label: "Members",
@@ -62,7 +62,7 @@ new Chart(chart, {
         borderWidth: 2,
         fill: true,
         tension: 0.1,
-        
+
       },
     ],
   },
@@ -82,14 +82,14 @@ new Chart(chart, {
           color: "#fff"
         },
         suggestedMax: 500,
-        
-        
+
+
       },
       x: {
         ticks: {
           color: "#fff"
         },
-        
+
       }
     },
     responsive: true,
@@ -120,19 +120,19 @@ const pieChart = document.querySelector("#pieCharts").getContext("2d");
 new Chart(pieChart, {
   type: 'doughnut',
   data: {
-    labels : [
+    labels: [
       'Members 43%',
       'Sales 36%',
       'LOSS 21%'
     ],
-    datasets:[{
-      data:[43, 36, 21],
-      backgroundColor : [
+    datasets: [{
+      data: [43, 36, 21],
+      backgroundColor: [
         'rgb(54, 162, 235)',
         '#7fffd4',
-        '#ff00ff',        
+        '#ff00ff',
       ],
-      hoverOffset : 20
+      hoverOffset: 20
     }]
   }
 })
