@@ -23,10 +23,22 @@ span {
 }
 
 body {
+  background-color: #bda4b0;
+  background-image: linear-gradient(
+    0deg,
+    #8b4361 0%,
+    #445076 28%,
+    #778192 47%,
+    #122862 100%
+  );
+
+  /*
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  */
   font-family: var(--font-family);
   color: white;
+  height: 100vh;
 }
 
 header {
@@ -200,7 +212,7 @@ header {
   text-align: center;
   width: 290px;
   max-height: 50vh;
-  background: #8799c3;
+  background: #34435a;
   overflow: scroll;
   scrollbar-width: none;
   position: relative;
@@ -320,21 +332,21 @@ header {
 }
 
 .nav .frequence button {
-  background: #b6adde;
+  background: #374260;
   width: 100px;
   height: 50px;
   border: none;
 }
 
 .nav .frequence .today {
-  background: #7c71ad;
+  background: #535377;
   margin-right: -6px;
 }
 
 .nav .calend {
-  height: 42px;
+  height: 50px;
   width: 265px;
-  background: #b6adde;
+  background: #374260;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -379,7 +391,7 @@ header {
 
 .resume_section .resume_texte p {
   font-size: 13px;
-  color: gray;
+  color: #dadada;
 }
 
 .resume_section .progress {
@@ -397,7 +409,7 @@ header {
 .resume_section .progress .info span {
   font-weight: bold;
   font-size: 20px;
-  color: #7c71ad;
+  color: #dadadab2;
 }
 
 .resume_section .card {
@@ -630,7 +642,7 @@ canvas#pieCharts {
 }
 
 .section_messages .messages {
-  background: #4b4d6265;
+  background: #23324780;
 }
 
 .messages .header {
@@ -838,7 +850,7 @@ canvas#pieCharts {
 .sidebar form input {
   width: 420px;
   height: 9vh;
-  background: #647aa0;
+  background: #34435a71;
   color: #fff;
   outline: none;
   border: none;
@@ -1172,7 +1184,6 @@ table td:nth-child(4) {
 
 tbody tr {
   border-bottom: 1px solid #dadada;
-  
 }
 tbody tr .description {
   display: flex;
@@ -1180,7 +1191,7 @@ tbody tr .description {
   gap: 1rem;
 }
 tbody tr td {
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
 }
 tbody tr .description img {
   width: 50px;
@@ -1209,4 +1220,127 @@ tbody tr .description > div button {
 
 tbody tr td:nth-child(4) span {
   color: red;
+}
+
+/*--- UI ELEMETENTS ---*/
+.ui_ELements {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  align-items: center;
+}
+.ui_ELements .messages {
+  background: #23324780;
+  height: 70vh;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 76px;
+  height: 39px;
+  margin: 0 10px;
+}
+.button_ellement {
+  padding-top: 1rem;
+}
+.button_ellement .but_ton{
+  border-bottom: 1px solid #dadada;
+  margin: 0 2rem;
+}
+.button_ellement .but_ton > div {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transform: 0.4s;
+  border-radius: 34px;
+}
+
+.switch input {
+  display: none;
+}
+.slider .smmal {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  top: 10px;
+  left: 10px;
+}
+.slider .smmal small {
+  font-size: 1rem;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 29px;
+  width: 29px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #34435a;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked + .slider {
+  background: #749ab9;
+}
+input:checked + .slider::before {
+  transform: translateX(38px);
+}
+.button_ellement .but_ton .radio{
+  display: flex;
+  gap: .7rem;
+}
+.button_ellement .but_ton .radio span {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+}
+.button_ellement .but_ton .radio span:nth-child(1) {
+  color: transparent;
+  background: #23324780;
+  border-radius: 50%;
+  border: 2px solid #747e90;
+}
+.button_ellement .but_ton .radio span:nth-child(2) {
+  color: transparent;
+  background: #122862;
+  border-radius: 50%;
+  border: 2px solid #747e90;
+}
+.button_ellement .but_ton .radio span:nth-child(3) {
+  color: #7aff00;
+  border-radius: 50%;
+  border: 2px solid #7aff00;
+}
+.button_ellement .but_ton .radio span:nth-child(4) {
+  color: #ed5d55;
+  border-radius: 50%;
+  border: 2px solid #ed5d55;
+}
+.button_ellement .but_ton .radio span:nth-child(5) {
+  color: #747e90;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #747e90;
+}
+.button_ellement .but_ton .radio span:nth-child(6) {
+  color: white;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid white;
 }
